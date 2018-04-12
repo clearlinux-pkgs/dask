@@ -4,13 +4,12 @@
 #
 Name     : dask
 Version  : 0.17.2
-Release  : 20
+Release  : 21
 URL      : http://pypi.debian.net/dask/dask-0.17.2.tar.gz
 Source0  : http://pypi.debian.net/dask/dask-0.17.2.tar.gz
 Summary  : Parallel PyData with Task Scheduling
 Group    : Development/Tools
 License  : BSD-3-Clause
-Requires: dask-legacypython
 Requires: dask-python3
 Requires: dask-python
 Requires: cloudpickle
@@ -22,7 +21,6 @@ BuildRequires : pytest-runner
 BuildRequires : python-dev
 BuildRequires : python3-dev
 BuildRequires : setuptools
-BuildRequires : setuptools-legacypython
 
 %description
 ====
@@ -35,15 +33,6 @@ BuildRequires : setuptools-legacypython
         
         LICENSE
         -------
-
-%package legacypython
-Summary: legacypython components for the dask package.
-Group: Default
-Requires: python-core
-
-%description legacypython
-legacypython components for the dask package.
-
 
 %package python
 Summary: python components for the dask package.
@@ -71,25 +60,18 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1522354849
-python2 setup.py build -b py2
+export SOURCE_DATE_EPOCH=1523561836
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1522354849
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
-python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
 
 %files
 %defattr(-,root,root,-)
-
-%files legacypython
-%defattr(-,root,root,-)
-/usr/lib/python2*/*
 
 %files python
 %defattr(-,root,root,-)
