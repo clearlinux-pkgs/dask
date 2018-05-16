@@ -4,7 +4,7 @@
 #
 Name     : dask
 Version  : 0.17.4
-Release  : 25
+Release  : 26
 URL      : http://pypi.debian.net/dask/dask-0.17.4.tar.gz
 Source0  : http://pypi.debian.net/dask/dask-0.17.4.tar.gz
 Summary  : Parallel PyData with Task Scheduling
