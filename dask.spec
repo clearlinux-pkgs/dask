@@ -4,7 +4,7 @@
 #
 Name     : dask
 Version  : 0.17.4
-Release  : 26
+Release  : 27
 URL      : http://pypi.debian.net/dask/dask-0.17.4.tar.gz
 Source0  : http://pypi.debian.net/dask/dask-0.17.4.tar.gz
 Summary  : Parallel PyData with Task Scheduling
@@ -60,7 +60,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1525795401
+export SOURCE_DATE_EPOCH=1526835099
 python3 setup.py build -b py3
 
 %install
