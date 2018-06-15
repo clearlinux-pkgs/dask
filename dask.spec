@@ -18,7 +18,7 @@ Requires: pandas
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : pytest-runner
-BuildRequires : python-dev
+
 BuildRequires : python3-dev
 BuildRequires : setuptools
 
