@@ -4,9 +4,9 @@
 #
 Name     : dask
 Version  : 0.18.2
-Release  : 37
-URL      : https://files.pythonhosted.org/packages/c0/5c/32a32e72d831a879a960d1e013c29351bd808e3060121d94efbc340db49f/dask-0.18.2.tar.gz
-Source0  : https://files.pythonhosted.org/packages/c0/5c/32a32e72d831a879a960d1e013c29351bd808e3060121d94efbc340db49f/dask-0.18.2.tar.gz
+Release  : 38
+URL      : http://pypi.debian.net/dask/dask-0.18.2.tar.gz
+Source0  : http://pypi.debian.net/dask/dask-0.18.2.tar.gz
 Summary  : Parallel PyData with Task Scheduling
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -69,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532361600
+export SOURCE_DATE_EPOCH=1532361725
 python3 setup.py build -b py3
 
 %install
