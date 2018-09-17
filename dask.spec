@@ -4,7 +4,7 @@
 #
 Name     : dask
 Version  : 0.19.2
-Release  : 41
+Release  : 42
 URL      : https://files.pythonhosted.org/packages/56/36/55a8d2492855fbfeb19cf3da526dc5bd12b410636bc24743f47691824583/dask-0.19.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/56/36/55a8d2492855fbfeb19cf3da526dc5bd12b410636bc24743f47691824583/dask-0.19.2.tar.gz
 Summary  : Parallel PyData with Task Scheduling
@@ -65,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1537200713
+export SOURCE_DATE_EPOCH=1537204883
 python3 setup.py build
 
 %install
