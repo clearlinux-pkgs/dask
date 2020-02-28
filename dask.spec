@@ -4,7 +4,7 @@
 #
 Name     : dask
 Version  : 2.11.0
-Release  : 80
+Release  : 81
 URL      : https://files.pythonhosted.org/packages/c1/40/fea0291146d582a6cbdbb9c3b8be4df30d9c799c7d59e977f7c2a57f31df/dask-2.11.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c1/40/fea0291146d582a6cbdbb9c3b8be4df30d9c799c7d59e977f7c2a57f31df/dask-2.11.0.tar.gz
 Summary  : Parallel PyData with Task Scheduling
@@ -33,7 +33,34 @@ BuildRequires : toolz
 %description
 Dask
 ====
+
 |Build Status| |Coverage| |Doc Status| |Gitter| |Version Status| |NumFOCUS|
+
+Dask is a flexible parallel computing library for analytics.  See
+documentation_ for more information.
+
+
+LICENSE
+-------
+
+New BSD. See `License File <https://github.com/dask/dask/blob/master/LICENSE.txt>`__.
+
+.. _documentation: https://dask.org
+.. |Build Status| image:: https://travis-ci.org/dask/dask.svg?branch=master
+   :target: https://travis-ci.org/dask/dask
+.. |Coverage| image:: https://coveralls.io/repos/dask/dask/badge.svg
+   :target: https://coveralls.io/r/dask/dask
+   :alt: Coverage status
+.. |Doc Status| image:: https://readthedocs.org/projects/dask/badge/?version=latest
+   :target: https://dask.org
+   :alt: Documentation Status
+.. |Gitter| image:: https://badges.gitter.im/Join%20Chat.svg
+   :alt: Join the chat at https://gitter.im/dask/dask
+   :target: https://gitter.im/dask/dask?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+.. |Version Status| image:: https://img.shields.io/pypi/v/dask.svg
+   :target: https://pypi.python.org/pypi/dask/
+.. |NumFOCUS| image:: https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A
+   :target: https://www.numfocus.org/
 
 %package license
 Summary: license components for the dask package.
@@ -56,6 +83,7 @@ python components for the dask package.
 Summary: python3 components for the dask package.
 Group: Default
 Requires: python3-core
+Provides: pypi(dask)
 
 %description python3
 python3 components for the dask package.
@@ -70,7 +98,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582142395
+export SOURCE_DATE_EPOCH=1582915867
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
