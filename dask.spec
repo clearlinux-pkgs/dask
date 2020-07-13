@@ -4,7 +4,7 @@
 #
 Name     : dask
 Version  : 2.20.0
-Release  : 92
+Release  : 93
 URL      : https://files.pythonhosted.org/packages/8d/09/7a8ca46121558abdced2f85ae6ab00c5390d270c08a888488204503aae33/dask-2.20.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/8d/09/7a8ca46121558abdced2f85ae6ab00c5390d270c08a888488204503aae33/dask-2.20.0.tar.gz
 Summary  : Parallel PyData with Task Scheduling
