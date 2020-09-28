@@ -1,5 +1,5 @@
 PKG_NAME := dask
-URL = https://files.pythonhosted.org/packages/01/a8/68bf5ab17950f54ee344e0cb85e4da3592fb741cb5e8a2ba30e49961cd8d/dask-2.27.0.tar.gz
+URL = https://files.pythonhosted.org/packages/53/4c/cf01ab8aac27c81431e70dc1a2ae99d11d8883ef7452820672967605da52/dask-2.28.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
