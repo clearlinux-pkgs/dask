@@ -4,7 +4,7 @@
 #
 Name     : dask
 Version  : 2021.10.0
-Release  : 131
+Release  : 132
 URL      : https://files.pythonhosted.org/packages/ee/61/7f9d61ae7db7eb254e16997a7fb3e89991533dbba76ba840c05f5528db5f/dask-2021.10.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ee/61/7f9d61ae7db7eb254e16997a7fb3e89991533dbba76ba840c05f5528db5f/dask-2021.10.0.tar.gz
 Summary  : Parallel PyData with Task Scheduling
